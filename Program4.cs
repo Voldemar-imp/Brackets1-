@@ -20,7 +20,7 @@ namespace Loops
             int maxDepth=0;
             bool isCorrect = true;
           
-            Console.WriteLine("Ведитие строку из символов '{0}' и '{1}'", rightBracket, leftBracket)  ;
+            Console.WriteLine("Ведитие строку содержащую символы '{0}' и '{1}'", rightBracket, leftBracket)  ;
             userInput = Console.ReadLine();
 
             foreach (var text1 in userInput)
@@ -28,7 +28,6 @@ namespace Loops
                 if (text1 == rightBracket)
                 {
                     rightBracketCount++;
-
                 }
                 else if (text1 == leftBracket)
                 {
@@ -36,6 +35,7 @@ namespace Loops
                 }
 
                 bracketEqual = rightBracketCount - leftBracketCount;
+                
                 if (bracketEqual == 0)
                 {
                     isCorrect = true;
@@ -54,7 +54,6 @@ namespace Loops
                 {
                     isCorrect = false;
                 }
-
             }                        
       
             if (isCorrect)
