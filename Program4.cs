@@ -15,7 +15,6 @@ namespace Loops
             char leftBracket = ')';          
             int rightBracketCount = 0;
             int leftBracketCount = 0;
-            bool areRightBracketFirst;
             int bracketEqual;
             int maxDepth=0;
             bool isCorrect = true;
